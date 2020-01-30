@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="4yj-KG-2EX">
+            <objects>
+                <viewController storyboardIdentifier="DetailViewController" id="53T-Jn-hdc" customClass="DetailViewController" customModule="ProgrammaticUserCells" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="l4x-MC-aW0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.rectangle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1H2-Dz-9t8">
+                                <rect key="frame" x="20" y="45" width="374" height="266.5"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axG-1y-g3d">
+                                <rect key="frame" x="20" y="333" width="374" height="40"/>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mRd-gX-PVt">
+                                <rect key="frame" x="20" y="381" width="374" height="20.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Arz-On-JFx">
+                                <rect key="frame" x="20" y="421.5" width="374" height="18"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNy-p6-j1w">
+                                <rect key="frame" x="20" y="519.5" width="374" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="VNy-p6-j1w" firstAttribute="leading" secondItem="wXx-Yi-ARE" secondAttribute="leading" constant="20" id="6oS-QB-LgA"/>
+                            <constraint firstItem="wXx-Yi-ARE" firstAttribute="trailing" secondItem="VNy-p6-j1w" secondAttribute="trailing" constant="20" id="BAb-kY-0ia"/>
+                            <constraint firstItem="wXx-Yi-ARE" firstAttribute="trailing" secondItem="axG-1y-g3d" secondAttribute="trailing" constant="20" id="JL7-yB-rr9"/>
+                            <constraint firstItem="axG-1y-g3d" firstAttribute="top" secondItem="1H2-Dz-9t8" secondAttribute="bottom" constant="20" id="Mw3-Tt-7Lg"/>
+                            <constraint firstItem="wXx-Yi-ARE" firstAttribute="trailing" secondItem="Arz-On-JFx" secondAttribute="trailing" constant="20" id="RxO-Yw-kfv"/>
+                            <constraint firstItem="axG-1y-g3d" firstAttribute="leading" secondItem="wXx-Yi-ARE" secondAttribute="leading" constant="20" id="UHO-xL-76l"/>
+                            <constraint firstItem="Arz-On-JFx" firstAttribute="top" secondItem="mRd-gX-PVt" secondAttribute="bottom" constant="20" id="Wwl-1A-hS7"/>
+                            <constraint firstItem="Arz-On-JFx" firstAttribute="leading" secondItem="wXx-Yi-ARE" secondAttribute="leading" constant="20" id="d9C-eo-yOp"/>
+                            <constraint firstItem="mRd-gX-PVt" firstAttribute="top" secondItem="axG-1y-g3d" secondAttribute="bottom" constant="8" id="jah-Yp-a7f"/>
+                            <constraint firstItem="1H2-Dz-9t8" firstAttribute="leading" secondItem="wXx-Yi-ARE" secondAttribute="leading" constant="20" id="jqa-Cd-BcJ"/>
+                            <constraint firstItem="VNy-p6-j1w" firstAttribute="top" secondItem="Arz-On-JFx" secondAttribute="bottom" constant="80" id="lFc-Xb-ChS"/>
+                            <constraint firstItem="wXx-Yi-ARE" firstAttribute="trailing" secondItem="mRd-gX-PVt" secondAttribute="trailing" constant="20" id="oAs-iv-5G9"/>
+                            <constraint firstItem="1H2-Dz-9t8" firstAttribute="height" secondItem="l4x-MC-aW0" secondAttribute="height" multiplier="0.3" id="tlS-3m-CzN"/>
+                            <constraint firstItem="mRd-gX-PVt" firstAttribute="leading" secondItem="wXx-Yi-ARE" secondAttribute="leading" constant="20" id="vEf-Wc-UXb"/>
+                            <constraint firstItem="wXx-Yi-ARE" firstAttribute="trailing" secondItem="1H2-Dz-9t8" secondAttribute="trailing" constant="20" id="wKu-n9-xjc"/>
+                            <constraint firstItem="1H2-Dz-9t8" firstAttribute="top" secondItem="wXx-Yi-ARE" secondAttribute="top" id="z0v-zD-9wB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="wXx-Yi-ARE"/>
+                    </view>
+                    <connections>
+                        <outlet property="cellLabel" destination="Arz-On-JFx" id="cBC-a5-MI4"/>
+                        <outlet property="cityLabel" destination="VNy-p6-j1w" id="mqa-O2-57j"/>
+                        <outlet property="detailImage" destination="1H2-Dz-9t8" id="d5i-Hd-gyo"/>
+                        <outlet property="emailLabel" destination="mRd-gX-PVt" id="i4k-hV-rBb"/>
+                        <outlet property="nameLabel" destination="axG-1y-g3d" id="2aZ-e8-GpA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aXc-sh-TXF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="163.768115942029" y="109.82142857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.crop.rectangle.fill" catalog="system" width="64" height="46"/>
+    </resources>
+</document>

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8045EE5723E240780094F717 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8045EE5623E240780094F717 /* ImageKit */; };
+		8047559A23E3678E00D4F82D /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047559923E3678E00D4F82D /* DetailViewController.swift */; };
+		8047559C23E3682900D4F82D /* UserDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8047559B23E3682900D4F82D /* UserDetail.storyboard */; };
 		80C42DDC23E27EA4001A28C3 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C42DDB23E27EA4001A28C3 /* UserView.swift */; };
 		80C42DDE23E285A7001A28C3 /* UserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C42DDD23E285A7001A28C3 /* UserCell.xib */; };
 		80C42DE023E286A7001A28C3 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C42DDF23E286A7001A28C3 /* UserCell.swift */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8047559923E3678E00D4F82D /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		8047559B23E3682900D4F82D /* UserDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserDetail.storyboard; sourceTree = "<group>"; };
 		80C42DDB23E27EA4001A28C3 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		80C42DDD23E285A7001A28C3 /* UserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserCell.xib; sourceTree = "<group>"; };
 		80C42DDF23E286A7001A28C3 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
@@ -102,6 +106,8 @@
 				CDA0F5CF2348F74900B2E7F0 /* SceneDelegate.swift */,
 				80C42DDB23E27EA4001A28C3 /* UserView.swift */,
 				CDA0F5D12348F74900B2E7F0 /* UserViewController.swift */,
+				8047559923E3678E00D4F82D /* DetailViewController.swift */,
+				8047559B23E3682900D4F82D /* UserDetail.storyboard */,
 				80C42DDD23E285A7001A28C3 /* UserCell.xib */,
 				80C42DDF23E286A7001A28C3 /* UserCell.swift */,
 				CDA0F5EF2348F7E300B2E7F0 /* User.swift */,
@@ -220,6 +226,7 @@
 			files = (
 				80C42DDE23E285A7001A28C3 /* UserCell.xib in Resources */,
 				CDA0F5F32348FB8200B2E7F0 /* randomUserSampleResponse.json in Resources */,
+				8047559C23E3682900D4F82D /* UserDetail.storyboard in Resources */,
 				CDA0F5DA2348F74F00B2E7F0 /* LaunchScreen.storyboard in Resources */,
 				CDA0F5D72348F74F00B2E7F0 /* Assets.xcassets in Resources */,
 			);
@@ -247,6 +254,7 @@
 				CDA0F5CE2348F74900B2E7F0 /* AppDelegate.swift in Sources */,
 				80C42DE023E286A7001A28C3 /* UserCell.swift in Sources */,
 				CDA0F5F92348FEB800B2E7F0 /* UsersFetchingService.swift in Sources */,
+				8047559A23E3678E00D4F82D /* DetailViewController.swift in Sources */,
 				CDA0F5F72348FE9600B2E7F0 /* NetworkHelper.swift in Sources */,
 				CDA0F5D02348F74900B2E7F0 /* SceneDelegate.swift in Sources */,
 			);

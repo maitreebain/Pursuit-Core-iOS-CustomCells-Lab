@@ -14,7 +14,7 @@ class UserView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
         let cv = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
-        cv.backgroundColor = .red
+        cv.backgroundColor = .darkGray
         return cv
     }()
     

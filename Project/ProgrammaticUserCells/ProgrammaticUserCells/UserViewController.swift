@@ -19,7 +19,7 @@ class UserViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .purple
+        view.backgroundColor = .white
         userView.collectionView.dataSource = self
         userView.collectionView.delegate = self
         
@@ -52,7 +52,7 @@ extension UserViewController: UICollectionViewDataSource {
         }
         
         let selectedUser = users[indexPath.row]
-        
+        cell.layer.borderWidth = 10
         cell.configureCell(selectedUser)
         
         return cell
@@ -70,5 +70,16 @@ extension UserViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: itemWidth, height: 120)
     }
     
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let user = users[indexPath.row]
+        
+        let detailViewStoryboard = UIStoryboard(name: "UserDetail", bundle: nil)
+        
+        guard let detailViewController = detailViewStoryboard.instantiateViewController(identifier: "DetailViewController") as? DetailViewController else {
+            fatalError("could not downcast to DetailViewController")
+        }
+        detailViewController.user = user
+        
+        navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
