@@ -7,7 +7,7 @@ class UserViewController: UIViewController {
     private var users = [User]() {
         didSet{
             DispatchQueue.main.async {
-                
+                self.userView.collectionView.reloadData()
             }
         }
     }
@@ -22,6 +22,8 @@ class UserViewController: UIViewController {
         view.backgroundColor = .purple
         userView.collectionView.dataSource = self
         userView.collectionView.delegate = self
+        
+        userView.collectionView.register(UINib(nibName: "UserCell", bundle: nil), forCellWithReuseIdentifier: "userCell")
         loadUsers()
     }
     
@@ -49,6 +51,10 @@ extension UserViewController: UICollectionViewDataSource {
             fatalError("could not downcast to UserCell")
         }
         
+        let selectedUser = users[indexPath.row]
+        
+        cell.configureCell(selectedUser)
+        
         return cell
     }
     
@@ -56,5 +62,13 @@ extension UserViewController: UICollectionViewDataSource {
 }
 
 extension UserViewController: UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+         let maxSize: CGSize = UIScreen.main.bounds.size
+        let itemWidth: CGFloat = maxSize.width * 0.95
+        
+        return CGSize(width: itemWidth, height: 120)
+    }
+    
     
 }
